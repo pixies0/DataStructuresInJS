@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var arraySeq = [0, 1]
+      var seq = 0
+      var prox = 0
+      var soma = 0
+
+      do {
+        seq++
+        prox = arraySeq[seq] + arraySeq[seq - 1]
+        if (prox < 50000) {
+          arraySeq.push(prox)
+          if (prox % 2 == 0) {
+            soma = soma + prox
+          }
+        }
+        console.log(arraySeq)
+      } while (prox < 50000)
+      console.log('Soma dos pares: ' + soma)
+    </script>
+  </body>
+</html>

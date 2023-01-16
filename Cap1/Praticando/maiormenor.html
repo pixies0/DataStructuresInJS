@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Pode se usar o var x = prompt("digite um numero: ") Para colher dados de entrada se preferir
+      var num1
+      var num2
+      var num3
+
+      var maior, menor
+
+      //teste1
+      num1 = 2
+      num2 = 1
+      num3 = 9
+      //teste2
+      num1 = 2
+      num2 = 9
+      num3 = 1
+      //teste3
+      num1 = 9
+      num2 = 1
+      num3 = 2
+      //teste4
+      num1 = 9
+      num2 = 2
+      num3 = 1
+      //teste5
+      num1 = 1
+      num2 = 1
+      num3 = 1
+
+      console.log(num1)
+      console.log(num2)
+      console.log(num3)
+
+      if (num1 > num2 && num1 > num3) {
+        maior = num1
+        num2 > num3 ? (menor = num3) : (menor = num2)
+        // if (num2 > num3) {
+        //   menor = num3
+        // } else {
+        //   menor = num2
+        // }
+      } else if (num2 > num1 && num2 > num3) {
+        maior = num2
+        num1 > num3 ? (menor = num3) : (menor = num1)
+      } else {
+        maior = num3
+        num1 > num2 ? (menor = num2) : (menor = num1)
+      }
+      alert('maior: ' + maior)
+      alert('menor: ' + menor)
+    </script>
+  </body>
+</html>
