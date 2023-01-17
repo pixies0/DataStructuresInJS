@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function inverter() {
+        var nome = document.getElementById('nome').value
+        var nomeInvertido = ''
+
+        for (var i = nome.length - 1; i >= 0; i--) {
+          nomeInvertido += nome[i]
+        }
+        return nomeInvertido
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Invertendo sem usar funções nativas JS</h1>
+    <label for="nome">Digite uma palavra qualquer:</label>
+    <input type="text" id="nome" />
+    <button onclick="alert(inverter())">Inverter ou Retrevni</button>
+  </body>
+</html>

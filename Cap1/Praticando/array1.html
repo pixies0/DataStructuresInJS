@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function soma() {
+        var array = [1, 7, 2, 2, 3, 10, 5, 6, 9, 4]
+        var soma = document.getElementById('numeros')
+        var x = 0
+
+        for (var i = 0; i < 10; i++) {
+          x += array[i]
+        }
+        soma.innerHTML += 'Soma: ' + x
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Calculando os valores de um array</h2>
+    <h3>array = [1, 7, 2, 2, 3, 10, 5, 6, 9, 4]</h3>
+    <button onclick="soma()">Somar</button>
+    <p id="numeros"></p>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function inicio() {
+        var num
+        var primeira = document.getElementById('primeiraContagem')
+        resultado = ''
+
+        for (var i = 0; i < 10; i++) {
+          num = i + 1
+          resultado = num
+          primeira.innerHTML += ' | ' + resultado
+        }
+      }
+
+      function impares() {
+        var num
+        var primeira = document.getElementById('segundaContagem')
+        resultado = ''
+
+        for (var i = 0; i < 100; i += 2) {
+          num = i + 1
+          resultado = num
+          primeira.innerHTML += ' | ' + resultado
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Imprimindo Números de 1 a 10</h2>
+    <button onclick="inicio()">Mostrar</button>
+    <p id="primeiraContagem"></p>
+
+    <h2>Imprimindo números ímpares menores que 100</h2>
+    <button onclick="impares()">Mostrar</button>
+    <p id="segundaContagem"></p>
+  </body>
+</html>
